@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpdeskDAL", "HelpdeskDAL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudyTests", "CaseStudyTests\CaseStudyTests.csproj", "{69C0E2B8-1A86-411C-BE5D-E4DA21A61FD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpdeskViewModels", "HelpdeskViewModels\HelpdeskViewModels.csproj", "{CEBAD007-E226-490B-A3F6-3C2BFAC8738C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpDeskWebsite", "HelpDeskWebsite\HelpDeskWebsite.csproj", "{9E038A90-AAD6-4B13-81A1-F6D9F41111B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{69C0E2B8-1A86-411C-BE5D-E4DA21A61FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C0E2B8-1A86-411C-BE5D-E4DA21A61FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C0E2B8-1A86-411C-BE5D-E4DA21A61FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBAD007-E226-490B-A3F6-3C2BFAC8738C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBAD007-E226-490B-A3F6-3C2BFAC8738C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBAD007-E226-490B-A3F6-3C2BFAC8738C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBAD007-E226-490B-A3F6-3C2BFAC8738C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E038A90-AAD6-4B13-81A1-F6D9F41111B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E038A90-AAD6-4B13-81A1-F6D9F41111B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E038A90-AAD6-4B13-81A1-F6D9F41111B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E038A90-AAD6-4B13-81A1-F6D9F41111B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
