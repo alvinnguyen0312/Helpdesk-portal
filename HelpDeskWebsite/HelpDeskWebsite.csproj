@@ -89,10 +89,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\employee.css" />
+    <Content Include="employee.html" />
+    <Content Include="employeeaddupdate.html" />
+    <Content Include="employeelist.html" />
     <Content Include="employeelookup.html" />
+    <Content Include="employeevalidation.html" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="home.html" />
+    <Content Include="img\employees.jpg" />
+    <Content Include="img\helpdesk2.jpg" />
+    <Content Include="Scripts\bootstrap-confirmation.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\employeeaddupdate.js" />
+    <Content Include="Scripts\employeecrud.js" />
+    <Content Include="Scripts\employeelist.js" />
     <Content Include="Scripts\employeelookup.js" />
+    <Content Include="Scripts\employeevalidation.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -102,6 +115,8 @@
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
@@ -114,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

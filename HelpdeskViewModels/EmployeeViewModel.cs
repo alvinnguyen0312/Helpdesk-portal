@@ -47,6 +47,10 @@ namespace HelpdeskViewModels
                     empVm.Id = emp.Id;
                     empVm.DepartmentId = emp.DepartmentId;
                     empVm.DepartmentName = emp.Department.DepartmentName;
+                    if (emp.StaffPicture != null)
+                    {
+                        empVm.StaffPicture64 = Convert.ToBase64String(emp.StaffPicture);
+                    }
                     empVm.Timer = Convert.ToBase64String(emp.Timer);
                     allVms.Add(empVm);
                 }
@@ -67,6 +71,11 @@ namespace HelpdeskViewModels
             try
             {
                 Employee emp = _model.GetByLastname(Lastname);
+                if(emp == null)
+                {
+                    this.Lastname = "not found";
+                    return;
+                }
                 Title = emp.Title;
                 Firstname = emp.FirstName;
                 Lastname = emp.LastName;
@@ -83,6 +92,7 @@ namespace HelpdeskViewModels
             catch (Exception ex)
             {
 
+                this.Lastname = "not found";
                 Console.WriteLine("Problem in " + GetType().Name + " " + MethodBase.GetCurrentMethod().Name +
                     " " + ex.Message);
                 throw ex;
@@ -115,9 +125,11 @@ namespace HelpdeskViewModels
         }
 
         //Update an employee
+        //public int Update()
         public int Update()
         {
-            int upStatus = -1;
+            // int upStatus = -1;
+            UpdateStatus upStatus = UpdateStatus.Failed;
             try
             {
                 Employee emp = new Employee();
@@ -134,6 +146,7 @@ namespace HelpdeskViewModels
                 }
                 emp.Timer = Convert.FromBase64String(Timer);
                 upStatus = _model.Update(emp);
+                //upStatus = UpdateStatus.Ok;
 
             }
             catch (Exception ex)
@@ -143,16 +156,16 @@ namespace HelpdeskViewModels
                     " " + ex.Message);
                 throw ex;
             }
-            return upStatus;
+            return Convert.ToInt16(upStatus);
         }
 
         //Delete an employee
         public int Delete()
         {
-            int studentsDeleted = -1;
+            int employeesDeleted = -1;
             try
             {
-                studentsDeleted = _model.Delete(Id);
+                employeesDeleted = _model.Delete(Id);
             }
             catch (Exception ex)
             {
@@ -161,7 +174,7 @@ namespace HelpdeskViewModels
                     " " + ex.Message);
                 throw ex;
             }
-            return studentsDeleted;
+            return employeesDeleted;
         }
 
         //find an employee using Is property

@@ -6,9 +6,9 @@ namespace HelpdeskDAL
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Employee
+    public partial class Employee : HelpdeskEntity
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
 
         [StringLength(4)]
         public string Title { get; set; }
@@ -31,10 +31,10 @@ namespace HelpdeskDAL
 
         public byte[] StaffPicture { get; set; }
 
-        [Column(TypeName = "timestamp")]
-        [MaxLength(8)]
-        [Timestamp]
-        public byte[] Timer { get; set; }
+        //[Column(TypeName = "timestamp")]
+        //[MaxLength(8)]
+        //[Timestamp]
+        //public byte[] Timer { get; set; }
 
         public virtual Department Department { get; set; }
     }

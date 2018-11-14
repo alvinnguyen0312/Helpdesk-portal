@@ -12,13 +12,13 @@
                 $('#title').text(data.Title);
                 $('#firstname').text(data.Firstname);
                 $('#phone').text(data.Phoneno);
-                $('#status').text('student found');
+                $('#status').text('employee found');
             } else {
                 $('#firstname').text('not found');
                 $('#email').text('');
                 $('#title').text('');
                 $('#phone').text('');
-                $('#status').text('no such student');
+                $('#status').text('no such employee');
             }
         } catch (error) {
             $('#status').text(error.message);
