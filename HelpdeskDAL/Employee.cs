@@ -8,7 +8,6 @@ namespace HelpdeskDAL
 
     public partial class Employee : HelpdeskEntity
     {
-        //public int Id { get; set; }
 
         [StringLength(4)]
         public string Title { get; set; }
@@ -30,11 +29,6 @@ namespace HelpdeskDAL
         public bool? IsTech { get; set; }
 
         public byte[] StaffPicture { get; set; }
-
-        //[Column(TypeName = "timestamp")]
-        //[MaxLength(8)]
-        //[Timestamp]
-        //public byte[] Timer { get; set; }
 
         public virtual Department Department { get; set; }
     }

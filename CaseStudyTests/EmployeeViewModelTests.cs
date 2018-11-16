@@ -53,18 +53,6 @@ namespace CaseStudyTests
             Assert.IsNotNull(vm.Firstname);
         }
 
-        //[TestMethod]
-        ////A test for the Update method
-        //public void EmployeeViewModelUpdateShouldReturnOkStatus()
-        //{
-        //    EmployeeViewModel vm = new EmployeeViewModel();
-        //    vm.Lastname = "Ng";
-        //    vm.GetByLastname(); 
-        //    vm.Email = (vm.Email.IndexOf(".com") > 0) ? "kietnguyen@abc.org" : "kietnguyen@abc.com";
-        //    UpdateStatus EmployeeUpdated = vm.Update();
-        //    Assert.IsTrue(EmployeeUpdated == UpdateStatus.Ok);
-        //}
-
         [TestMethod]
         //A test for the Delete method 
         public void EmployeeViewModelDeleteShouldReturnOne()

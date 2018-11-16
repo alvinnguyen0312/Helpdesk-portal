@@ -128,7 +128,6 @@ namespace HelpdeskViewModels
         //public int Update()
         public int Update()
         {
-            // int upStatus = -1;
             UpdateStatus upStatus = UpdateStatus.Failed;
             try
             {
